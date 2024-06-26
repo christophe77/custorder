@@ -1,13 +1,9 @@
 {
 	"$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
 	"rushVersion": "5.129.5",
-	"pnpmVersion": "8.15.8",
 	"yarnVersion": "1.22.19",
-	"nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <21.0.0",
-
-	"approvedPackagesPolicy": {
-		"ignoredNpmScopes": ["@types"]
-	},
+	"nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <22.0.0",
+	"suppressNodeLtsWarning": false,
 
 	"repository": {
 		"url": "https://github.com/christophe77/custorder",
@@ -27,15 +23,15 @@
 	"projects": [
 		{
 			"packageName": "front",
-			"projectFolder": "apps/front",
-			"reviewCategory": "production",
+			"projectFolder": "tools/front",
+			"reviewCategory": "tools",
 			"tags": ["frontend-team"]
 		},
 
 		{
 			"packageName": "back",
-			"projectFolder": "apps/back",
-			"reviewCategory": "production",
+			"projectFolder": "tools/back",
+			"reviewCategory": "tools",
 			"tags": ["backend-team"]
 		}
 	]
